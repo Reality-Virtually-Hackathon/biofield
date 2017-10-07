@@ -12,7 +12,7 @@ GameCtrl.Preloader.prototype = {
 	preload: function () {
 
 		//	These are the assets we loaded in Boot.js
-		//	A nice sparkly background and a loading progress bar		
+		//	A nice sparkly background and a loading progress bar
 		this.background = this.add.sprite(this.game.width / 2 - 250, this.game.height / 2 - 70, 'preloaderBackground');
 		this.preloadBar = this.add.sprite(this.game.width / 2 - 250, this.game.height / 2 - 70, 'preloaderBar');
 
@@ -21,10 +21,12 @@ GameCtrl.Preloader.prototype = {
 		//	as the files below are loaded in.
 		this.load.setPreloadSprite(this.preloadBar);
 
-		//	Here we load the rest of the assets our game needs.		
-		this.load.image('background', 'assets/images/background.png');		
+		//	Here we load the rest of the assets our game needs.
+		this.load.image('background', 'assets/images/background.png');
 		this.load.image('playButton', 'assets/images/play_button.png');
-		
+		// LG
+			this.load.image('bacteriaButton', 'assets/images/bacteria_button.png');
+			this.load.image('lymphButton', 'assets/images/lymph_button.png');
 		//  This is how you load an atlas
 		//this.load.atlas('playButton', 'assets/images/play_button.png', 'assets/images/play_button.json');
 
@@ -51,10 +53,10 @@ GameCtrl.Preloader.prototype = {
 		//	You can jump right into the menu if you want and still play the music, but you'll have a few
 		//	seconds of delay while the mp3 decodes - so if you need your music to be in-sync with your menu
 		//	it's best to wait for it to decode here first, then carry on.
-		
+
 		//	If you don't have any music in your game then put the game.state.start line into the create function and delete
 		//	the update function completely.
-		
+
 		if (this.cache.isSoundDecoded('titleMusic') && this.ready == false)
 		{
 			this.ready = true;

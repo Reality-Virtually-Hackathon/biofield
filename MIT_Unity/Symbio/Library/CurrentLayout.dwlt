@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1267
+  controlID: 10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1268
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,11 +153,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1531
-    height: 675
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+    height: 671
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 1269
+  controlID: 12
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,9 +175,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 379
-    height: 675
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 671
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -200,7 +200,7 @@ MonoBehaviour:
     x: 379
     y: 0
     width: 1152
-    height: 675
+    height: 671
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 12}
@@ -225,9 +225,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 675
+    y: 671
     width: 1531
-    height: 272
+    height: 276
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 16}
@@ -256,8 +256,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -289,16 +289,16 @@ MonoBehaviour:
     x: 381
     y: 92
     width: 1148
-    height: 654
+    height: 650
   m_SceneLighting: 1
-  lastFramingTime: 553.5894185044616
+  lastFramingTime: 1005.3387722951363
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.857415, y: 0.23908234, z: -22.563631}
+    m_Target: {x: -0.16171278, y: -0.14195424, z: 0.28246212}
     speed: 2
-    m_Value: {x: 7.857415, y: 0.23908234, z: -22.563631}
+    m_Value: {x: -0.16171278, y: -0.14195424, z: 0.28246212}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -321,13 +321,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.014839009, y: 0.9505201, z: -0.045957938, w: 0.30688643}
+    m_Target: {x: 0.23209943, y: 0.024799962, z: -0.0059188064, w: 0.97235787}
     speed: 2
-    m_Value: {x: 0.014839009, y: 0.9505201, z: -0.045957938, w: 0.30688643}
+    m_Value: {x: 0.23209943, y: 0.024799962, z: -0.0059188064, w: 0.97235787}
   m_Size:
-    m_Target: 17.59877
+    m_Target: 1.9416587
     speed: 2
-    m_Value: 17.59877
+    m_Value: 1.9416587
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -363,12 +363,12 @@ MonoBehaviour:
     x: 0
     y: 92
     width: 377
-    height: 654
+    height: 650
   m_TreeViewState:
-    scrollPos: {x: 0, y: 48}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9efaffffa0faffff00000000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a6f4ffff
+    m_LastClickedID: -2906
+    m_ExpandedIDs: bcf4ffffc0f4ffff18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,9 +516,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 767
+    y: 763
     width: 1529
-    height: 251
+    height: 255
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -531,19 +531,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/SkyBoxes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/SkyBoxes
+  - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\lewis\Documents\GitHub\biofield\MIT_Unity\Symbio
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 358}
-    m_SelectedIDs: 92320000
-    m_LastClickedID: 12946
-    m_ExpandedIDs: 000000006e2e000092320000bc590000d65b00001c5e000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 04280000
+    m_LastClickedID: 10244
+    m_ExpandedIDs: 0000000004280000282c0000605300007c550000c457000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,7 +571,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e2e000092320000bc590000d65b00001c5e000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000004280000282c0000605300007c550000c4570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
