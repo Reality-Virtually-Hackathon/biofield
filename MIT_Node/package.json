@@ -1,0 +1,31 @@
+{
+  "name": "basic-mmo-phaser",
+  "version": "1.0.0",
+  "description": " Multiplayer Game Server for MIT Reality Virtually Hackathon ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Phaser",
+    "Multiplayer",
+    "game",
+    "Node.js",
+    "socket.io"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
