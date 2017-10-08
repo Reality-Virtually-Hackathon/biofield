@@ -15,7 +15,7 @@ public class FireAntibody : MonoBehaviour {
 		{
 			if(antibodyPrefab != null)
 			{
-				GameObject spawnedAntibody = GameObject.Instantiate(antibodyPrefab, lhand.transform.position, Quaternion.identity);
+                GameObject spawnedAntibody = GameObject.Instantiate(antibodyPrefab, lhand.transform.position, lhand.transform.rotation);
 				Rigidbody rb = spawnedAntibody.GetComponent<Rigidbody>();
 				rb.isKinematic = false;
 				rb.AddForce(spawnedAntibody.transform.forward * force);
@@ -25,8 +25,8 @@ public class FireAntibody : MonoBehaviour {
 		{
 			if(antibodyPrefab != null)
 			{
-				GameObject spawnedAntibody = GameObject.Instantiate(antibodyPrefab, rhand.transform.position, Quaternion.identity);
-				Rigidbody rb = spawnedAntibody.GetComponent<Rigidbody>();
+				GameObject spawnedAntibody = GameObject.Instantiate(antibodyPrefab, rhand.transform.position, rhand.transform.rotation);
+                Rigidbody rb = spawnedAntibody.GetComponent<Rigidbody>();
 				rb.isKinematic = false;
 				rb.AddForce(spawnedAntibody.transform.forward * force);
 			}	
