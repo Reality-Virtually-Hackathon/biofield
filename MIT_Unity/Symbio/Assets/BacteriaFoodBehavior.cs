@@ -29,10 +29,8 @@ public class BacteriaFoodBehavior : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col)
 	{
-		Debug.Log("Collided with bacteria");
 		if(col.gameObject.CompareTag("Bacteria"))
 		{
-			Debug.Log("Collided with bacteria");
 			Destroy(this.transform.gameObject);
 			//spawn another after awhile
 		}
