@@ -7,6 +7,7 @@ Perfect for the classroom, one player wearing an Oculus Rift headset represents 
 ## Dependenices & SDKs
 * [node](https://github.com/nodejs/node) ⇨ \[[LICENSE](https://github.com/nodejs/node/blob/master/LICENSE)\]
 * [phaser](https://github.com/photonstorm/phaser) ⇨ \[[LICENSE](https://github.com/photonstorm/phaser/blob/master/v3/license.txt)\]
+* [express](https://github.com/expressjs/express) ⇨ \[[LICENSE](https://github.com/expressjs/express/blob/master/LICENSE)\]
 * [socket.io](https://github.com/socketio/socket.io) ⇨ \[[LICENSE](https://github.com/socketio/socket.io/blob/master/LICENSE)\]
 * [Unity Free, v2017.1.2f1](https://unity3d.com/) ⇨ \[[LICENSE](https://unity3d.com/legal/eula-3.5)\]
 * [Oculus Utilities for Unity](https://developer.oculus.com/downloads/package/oculus-utilities-for-unity-5/) ⇨ \[[LICENSE](https://developer.oculus.com/licenses/sdk-3.4.1/)\]
