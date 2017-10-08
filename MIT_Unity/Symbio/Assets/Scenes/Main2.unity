@@ -379,6 +379,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1760184589780322, guid: 450356af609c83949bbba20bd64a686b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 450356af609c83949bbba20bd64a686b, type: 2}
   m_IsPrefabParent: 0
@@ -497,7 +501,8 @@ MonoBehaviour:
   foodInScene: []
   bacteriaInScene: []
   socketHost: {fileID: 0}
-  bacteriaPrefab: {fileID: 0}
+  bacteriaPrefab: {fileID: 1760184589780322, guid: 450356af609c83949bbba20bd64a686b,
+    type: 2}
   neutroPrefab: {fileID: 0}
 --- !u!114 &1551178018
 MonoBehaviour:

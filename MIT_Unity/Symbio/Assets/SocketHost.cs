@@ -12,19 +12,8 @@ public class SocketHost : MonoBehaviour {
 
 	public void Start() {
         socket = GetComponent<SocketIOComponent>();
-		socket.On("open", TestOpen);
 	}
-
-	public void TestOpen(SocketIOEvent e)
-	{
-		Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
-	}
-	
-    private void OnUserConnected(SocketIOEvent evt)
-    {
-        Debug.Log("Message from server is " + evt.data);
-    }
-
+    
 	public void SendBacteriaPos(Vector2 bacteriaPos, int bacteriaId)
     {
         Dictionary<string, string> enemyPosData = new Dictionary<string, string>();

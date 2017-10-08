@@ -19,33 +19,20 @@ server.listen(process.env.PORT || 8080,function(){
     console.log('Listening on '+server.address().port);
 });
 
-io.on('connection',function(socket){
-
-    socket.on('newplayer',function(){
-        socket.player = {
-            id: server.lastPlayerID++,
-            x: randomInt(100,400),
-            y: randomInt(100,400)
-        };
-        socket.emit('allplayers',getAllPlayers());
-        socket.broadcast.emit('newplayer',socket.player);
-
-        socket.on('click',function(data){
-            console.log('click at'+data.x+', '+data.y);
-            socket.player.x = data.x;
-            socket.player.y = data.y;
-            io.emit('move',socket.player);
-        });
-
-        socket.on('disconnect',function(){
-            io.emit('remove',socket.player.id);
-        });
+io.on(('connection'), function(socket){
+	socket.on('BACTERIA_POS', function(data){ 
+        var bacteriaData =
+        {
+            x:data.posx,
+            y:data.posy,
+            id:data.id
+        }
+        //console.log(currentUser.name+"move to "+currentUser.position)
+        //Broadcast to all
+        console.log(bacteriaData.x, bacteriaData.y);
+        //socket.broadcast.emit("WEB_UPDATE_BACTERIA", enemyData);
     });
-
-    socket.on('test',function(){
-        console.log('test received');
-    });
-});
+})
 
 function getAllPlayers(){
     var players = [];
