@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4318876456928226}
   - component: {fileID: 65129369137674524}
   - component: {fileID: 114380513155406268}
+  - component: {fileID: 54706640629943240}
   m_Layer: 0
   m_Name: bacteria_food
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   - component: {fileID: 23289282606575156}
   - component: {fileID: 114304823609767094}
   - component: {fileID: 65245695769454106}
+  - component: {fileID: 114929496420653228}
   m_Layer: 0
   m_Name: bacteria_food_mesh
   m_TagString: Untagged
@@ -113,6 +115,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545383612254756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54706640629943240
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1388726384727682}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65129369137674524
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -158,5 +175,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5473b2a6bd4c8a459a8ea47c60b66b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodSpeed: 1
+--- !u!114 &114929496420653228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545383612254756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7b3c7896129eb4ca377ae911cdbe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

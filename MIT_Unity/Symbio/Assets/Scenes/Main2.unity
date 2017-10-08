@@ -245,7 +245,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 543618041}
-  - component: {fileID: 543618040}
   m_Layer: 0
   m_Name: SpawnBacteriaFood
   m_TagString: Untagged
@@ -253,22 +252,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &543618040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 543618039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9ed1ae4b40aa84a864da10c0dc020a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bacteriaFoodPrefab: {fileID: 1388726384727682, guid: 9981d5c44a350c349a411126f93198f8,
-    type: 2}
-  amountOfFood: 100
-  spacing: 5
-  ySpacing: 4
 --- !u!4 &543618041
 Transform:
   m_ObjectHideFlags: 0
@@ -3216,7 +3199,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3286,6 +3269,82 @@ MonoBehaviour:
   rhand: {fileID: 840568650}
   lhand: {fileID: 255656609}
   force: 100
+--- !u!1 &1551178015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1551178019}
+  - component: {fileID: 1551178018}
+  - component: {fileID: 1551178017}
+  - component: {fileID: 1551178016}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1551178016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551178015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9ed1ae4b40aa84a864da10c0dc020a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bacteriaFoodPrefab: {fileID: 1388726384727682, guid: 9981d5c44a350c349a411126f93198f8,
+    type: 2}
+  amountOfFood: 100
+  spacing: 5
+  ySpacing: 4
+--- !u!114 &1551178017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551178015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1acd8d9bf040b42bd4a5729cd35ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodInScene: []
+--- !u!114 &1551178018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551178015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961346d7e16a445ff93777573e78efd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: ws://localhost:8080/socket.io/?EIO=4&transport=websocket
+  autoConnect: 1
+  reconnectDelay: 5
+  ackExpirationTime: 1800
+  pingInterval: 25
+  pingTimeout: 60
+--- !u!4 &1551178019
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551178015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.125561, y: 1.0230511, z: -3.6333437}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660004146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,6 +3429,18 @@ Prefab:
     - target: {fileID: 4318876456928226, guid: 9981d5c44a350c349a411126f93198f8, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390702965794108, guid: 9981d5c44a350c349a411126f93198f8, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390702965794108, guid: 9981d5c44a350c349a411126f93198f8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390702965794108, guid: 9981d5c44a350c349a411126f93198f8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9981d5c44a350c349a411126f93198f8, type: 2}
