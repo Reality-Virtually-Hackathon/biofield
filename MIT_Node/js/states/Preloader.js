@@ -26,7 +26,7 @@ GameCtrl.Preloader.prototype = {
 		this.load.image('playButton', 'assets/images/play_button.png');
 		// LG
 			this.load.image('bacteriaButton', 'assets/images/bacteria_button.png');
-			this.load.image('lymphButton', 'assets/images/lymph_button.png');
+			this.load.image('neutroButton', 'assets/images/neutro_button.png');
 		//  This is how you load an atlas
 		//this.load.atlas('playButton', 'assets/images/play_button.png', 'assets/images/play_button.json');
 
