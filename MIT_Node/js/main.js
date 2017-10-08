@@ -10,6 +10,7 @@
   game.state.add('Preloader', GameCtrl.Preloader);
   game.state.add('MainMenu', GameCtrl.MainMenu);
   game.state.add('Game', GameCtrl.Game);
+  game.state.add('RoleSelect', GameCtrl.RoleSelect);
 
   //        Now start the Boot state.
   game.state.start('Boot');

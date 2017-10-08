@@ -21,10 +21,7 @@ GameCtrl.MainMenu.prototype = {
 
                 this.background = this.add.sprite(0, 0, 'background');
 
-                this.playButton = this.add.button(this.game.width- 280, this.game.height - 230, 'playButton', this.startGame, this, 'buttonOver', 'buttonOut', 'buttonOver');
-                // LG
-                this.bacteriaButton = this.add.button(this.game.width- 200, this.game.height - 230, 'bacteriaButton', this.startGame, this, 'buttonOver', 'buttonOut', 'buttonOver');
-                this.lymphButton = this.add.button(this.game.width- 200, this.game.height - 230, 'lymphButton', this.startGame, this, 'buttonOver', 'buttonOut', 'buttonOver');
+                this.playButton = this.add.button(this.game.width- 280, this.game.height - 300, 'playButton', this.startGame, this, 'buttonOver', 'buttonOut', 'buttonOver');
         },
 
         update: function () {
@@ -38,8 +35,7 @@ GameCtrl.MainMenu.prototype = {
                 //        Ok, the Play Button has been clicked or touched, so let's stop the music (otherwise it'll carry on playing)
                 this.music.stop();
 
-                //        And start the actual game
-                this.game.state.start('Game');
+                this.game.state.start('RoleSelect');
 
         }
 

@@ -29,11 +29,7 @@ GameCtrl.Game.prototype = {
 
                 //        Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
                 this.background = this.add.sprite(0, 0, 'background');
-                this.game.add.text(
-                    this.game.width / 2 - 350, 
-                    this.game.height / 2, 
-                    "WHAT NEXT?!?!?!?!?!??!"                    
-                );
+
 
         },
 
@@ -42,7 +38,6 @@ GameCtrl.Game.prototype = {
                 //        Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
 
         },
-
         quitGame: function (pointer) {
 
                 //        Here you should destroy anything you no longer need.
