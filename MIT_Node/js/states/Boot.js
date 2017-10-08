@@ -22,6 +22,8 @@ GameCtrl.Boot.prototype = {
         this.load.image('background', 'assets/images/background.png');
         this.load.image('preloaderBackground', 'assets/images/progress_bar_background.png');
         this.load.image('preloaderBar', 'assets/images/progress_bar.png');
+        // Title image
+        this.load.image('title', 'assets/images/title.png');
 
     },
 
