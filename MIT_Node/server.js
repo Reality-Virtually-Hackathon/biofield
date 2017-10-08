@@ -14,7 +14,6 @@ app.get('/',function(req,res){
 });
 
 server.lastPlayerID = 0;
-
 server.listen(process.env.PORT || 8080,function(){
     console.log('Listening on '+server.address().port);
 });
@@ -27,10 +26,34 @@ io.on(('connection'), function(socket){
             y:data.posy,
             id:data.id
         }
-        //console.log(currentUser.name+"move to "+currentUser.position)
-        //Broadcast to all
-        console.log(bacteriaData.x, bacteriaData.y);
-        //socket.broadcast.emit("WEB_UPDATE_BACTERIA", enemyData);
+        io.emit("WEB_UPDATE_BACTERIA", bacteriaData);
+    });
+	socket.on('LYMPHOCITE_POS', function(data){ 
+        var lymphociteData =
+        {
+            x:data.posx,
+            y:data.posy,
+            id:data.id
+        }
+        io.emit("WEB_UPDATE_LYMPHOCITE", lymphociteData);
+    });
+	socket.on('BACTERIAFOOD_POS', function(data){ 
+        var bacteriaFoodData =
+        {
+            x:data.posx,
+            y:data.posy,
+            id:data.id
+        }
+        io.emit("WEB_UPDATE_BACTERIAFOOD", bacteriaFoodData);
+    });
+	socket.on('ANTIBODY_POS', function(data){ 
+        var antibodyData =
+        {
+            x:data.posx,
+            y:data.posy,
+            id:data.id
+        }
+        io.emit("WEB_UPDATE_ANTIBODY", antibodyData);
     });
 })
 

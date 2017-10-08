@@ -26,17 +26,20 @@ GameCtrl.Game = function (game) {
 GameCtrl.Game.prototype = {
 
         create: function () {
-
                 //        Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
                 this.background = this.add.sprite(0, 0, 'background');
-        
-                console.log(this.selection);
+                
+                this.bacterias = [];
+                this.lymphocites = [];
+                this.antibodies = [];
+                this.bacteriaFoods = [];
+
+                this.client = new Client(this);
+                this.client.create();
         },
 
         update: function () {
-
-                //        Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
-
+                   
         },
         quitGame: function (pointer) {
 
@@ -46,6 +49,45 @@ GameCtrl.Game.prototype = {
                 //        Then let's go back to the main menu.
                 this.game.state.start('MainMenu');
 
-        }
+        },
+        createBacteria: function(x, y)
+        {
+            this.bacteria = this.add.sprite(x, y, 'bacteriaSprite')
 
+            this.bacteria.scale.x /= 2;
+            this.bacteria.scale.y /= 2;
+            this.bacteria.x = x;
+            this.bacteria.y = y;
+            this.bacterias.push(this.bacteria);
+        },
+        createLymphocite: function(x, y)
+        {
+            this.lymphocite = this.add.sprite(x, y, 'lymphoSprite')
+
+            this.lymphocite.scale.x /= 2;
+            this.lymphocite.scale.y /= 2;
+            this.lymphocite.x = x;
+            this.lymphocite.y = y;
+            this.lymphocites.push(this.lymphocite);
+        },
+        createBacteriaFood: function(x, y)
+        {
+            this.bacteriaFood = this.add.sprite(x, y, 'bacteriaFoodSprite')
+
+            this.bacteriaFood.scale.x /= 2;
+            this.bacteriaFood.scale.y /= 2;
+            this.bacteriaFood.x = x;
+            this.bacteriaFood.y = y;
+            this.bacteriaFoods.push(this.bacteriaFood);
+        },
+        createAntibody: function(x, y)
+        {
+            this.antibody = this.add.sprite(x, y, 'antibodySprite')
+
+            this.antibody.scale.x /= 2;
+            this.antibody.scale.y /= 2;
+            this.antibody.x = x;
+            this.antibody.y = y;
+            this.antibodies.push(this.bacteria);
+        },
 };

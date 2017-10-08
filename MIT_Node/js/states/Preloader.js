@@ -25,11 +25,18 @@ GameCtrl.Preloader.prototype = {
 		this.load.image('background', 'assets/images/background.png');
 		this.load.image('playButton', 'assets/images/play_button.png');
 		// LG
-			this.load.image('bacteriaButton', 'assets/images/bacteria_button.png');
-			this.load.image('neutroButton', 'assets/images/neutro_button.png');
+		this.load.image('bacteriaButton', 'assets/images/bacteria_button.png');
+		this.load.image('neutroButton', 'assets/images/neutro_button.png');
 
 		this.load.image('bacteriaOverview', 'assets/images/bacteria_overview.png');
 		this.load.image('neutroOverview', 'assets/images/neutro_overview.png');
+
+		this.load.image('bacteriaSprite', 'assets/images/bacteria_sprite.png');
+		this.load.image('neutroSprite', 'assets/images/neutro_sprite.png');
+		this.load.image('lymphoSprite', 'assets/images/lympho_sprite.png');
+		this.load.image('bacteriaFoodSprite', 'assets/images/bacteriaFood_sprite.png');
+		this.load.image('antibodySprite', 'assets/images/antibody_sprite.png');
+
 		this.load.image('select', 'assets/images/select.png');
 		this.load.image('back', 'assets/images/back.png');
 		//  This is how you load an atlas
