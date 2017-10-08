@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Phaser Full Screen Mobile Example</title>
+  <title>Symbio</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
   <meta name="format-detection" content="telephone=no">
@@ -24,16 +24,14 @@
   <div id="game"></div>
   <div id="orientation"></div>
 
-  <!-- build:remove -->
-  <script src="http://localhost:35729/livereload.js"></script>  
-  <!-- /build -->
-
   <!-- build:js main.min.js -->
+  <script src="/socket.io/socket.io.js"></script>
   <script src="js/lib/phaser.js"></script>
   <script src="js/states/Boot.js"></script>
   <script src="js/states/Preloader.js"></script>
   <script src="js/states/MainMenu.js"></script>
   <script src="js/states/Game.js"></script>
+  <script src="js/states/Client.js"></script>
   <script src="js/states/RoleSelect.js"></script>
   <script src="js/main.js"></script>
   <!-- /build -->
