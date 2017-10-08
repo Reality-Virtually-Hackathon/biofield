@@ -22,6 +22,12 @@ GameCtrl.Boot.prototype = {
         this.load.image('background', 'assets/images/background.png');
         this.load.image('preloaderBackground', 'assets/images/progress_bar_background.png');
         this.load.image('preloaderBar', 'assets/images/progress_bar.png');
+        // Title image
+        this.load.image('title', 'assets/images/title.png');
+        // Select Entity Image
+        this.load.image('select_entity', 'assets/images/select_entity.png');
+        // How To Play image
+        this.load.image('how_to_play', 'assets/images/how_to_play.png');
 
     },
 
