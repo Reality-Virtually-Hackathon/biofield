@@ -9,7 +9,6 @@ Perfect for the classroom, one player wearing an Oculus Rift headset represents 
 * [phaser](https://github.com/photonstorm/phaser) ⇨ \[[LICENSE](https://github.com/photonstorm/phaser/blob/master/v3/license.txt)\]
 * [express](https://github.com/expressjs/express) ⇨ \[[LICENSE](https://github.com/expressjs/express/blob/master/LICENSE)\]
 * [socket.io](https://github.com/socketio/socket.io) ⇨ \[[LICENSE](https://github.com/socketio/socket.io/blob/master/LICENSE)\]
-* [Adobe Audition Creative Commons](https://offers.adobe.com/en/na/audition/offers/audition_dlc/AdobeAuditionDLCSFX.html) ⇨ \[[LICENSE](http://www.adobe.com/legal/terms.html)\]
 * [Unity Free, v2017.1.2f1](https://unity3d.com/) ⇨ \[[LICENSE](https://unity3d.com/legal/eula-3.5)\]
 * [Oculus Utilities for Unity](https://developer.oculus.com/downloads/package/oculus-utilities-for-unity-5/) ⇨ \[[LICENSE](https://developer.oculus.com/licenses/sdk-3.4.1/)\]
 
