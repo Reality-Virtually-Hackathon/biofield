@@ -29,8 +29,8 @@ GameCtrl.Game.prototype = {
 
                 //        Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
                 this.background = this.add.sprite(0, 0, 'background');
-
-
+        
+                console.log(this.selection);
         },
 
         update: function () {

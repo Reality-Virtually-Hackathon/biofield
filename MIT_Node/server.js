@@ -13,7 +13,7 @@ app.get('/',function(req,res){
     res.sendFile(__dirname+'/index.html');
 });
 
-server.lastPlayderID = 0;
+server.lastPlayerID = 0;
 
 server.listen(process.env.PORT || 8080,function(){
     console.log('Listening on '+server.address().port);
@@ -23,7 +23,7 @@ io.on('connection',function(socket){
 
     socket.on('newplayer',function(){
         socket.player = {
-            id: server.lastPlayderID++,
+            id: server.lastPlayerID++,
             x: randomInt(100,400),
             y: randomInt(100,400)
         };
