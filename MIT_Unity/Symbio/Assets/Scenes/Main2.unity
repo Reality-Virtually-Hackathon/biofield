@@ -478,10 +478,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bacteriaFoodPrefab: {fileID: 1388726384727682, guid: 9981d5c44a350c349a411126f93198f8,
     type: 2}
-  xmax: 300
-  ymax: 180
-  spacing: 8
-  ySpacing: 8
+  xmax: 95
+  ymax: 50
+  spacing: 10.5
+  ySpacing: 7
 --- !u!114 &1551178017
 MonoBehaviour:
   m_ObjectHideFlags: 0

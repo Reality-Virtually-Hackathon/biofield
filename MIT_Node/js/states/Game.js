@@ -36,10 +36,31 @@ GameCtrl.Game.prototype = {
 
                 this.client = new Client(this);
                 this.client.create();
+
+                upKey = this.game.input.keyboard.addKey(Phaser.Keyboard.UP);
+                downKey = this.game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
+                leftKey = this.game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
+                rightKey = this.game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
         },
 
         update: function () {
-                   
+            if (upKey.isDown)
+            {
+                this.client.socket.emit('MOVE_BACTERIA', 'up');
+            }
+            else if (downKey.isDown)
+            {
+                this.client.socket.emit('MOVE_BACTERIA', 'down');
+            }
+            if (leftKey.isDown)
+            {
+                this.client.socket.emit('MOVE_BACTERIA', 'left');
+            }
+            else if (rightKey.isDown)
+            {
+                this.client.socket.emit('MOVE_BACTERIA', 'right');
+            }
+        
         },
         quitGame: function (pointer) {
 

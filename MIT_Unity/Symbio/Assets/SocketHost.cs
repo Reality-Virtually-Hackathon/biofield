@@ -11,8 +11,13 @@ public class SocketHost : MonoBehaviour {
 
 	public void Start() {
         socket = GetComponent<SocketIOComponent>();
+        socket.On("MOVE_BACTERIA", MoveBacteria);
 	}
-    
+    public void MoveBacteria(SocketIOEvent evt)
+    {
+        Debug.Log("called");
+    }
+
 	public void SendBacteriaPos(Vector2 bacteriaPos, int bacteriaId)
     {
         Dictionary<string, string> enemyPosData = new Dictionary<string, string>();
